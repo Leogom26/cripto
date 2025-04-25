@@ -8,7 +8,7 @@ export function Detail() {
   useEffect (() => {
     async function getCoin() {
       try{
-        fetch(`https://assets.coincap.io/assets/${cripto}`)
+        fetch(`https://rest.coincap.io/v3/assets?${cripto}&apiKey=474de8a719cb1410fc2716baebf76ccdf2d075ae541003dd285bd5bc61d3306f`)
         .then(response => response.json())
         .then((data) => {
           console.log(data)
