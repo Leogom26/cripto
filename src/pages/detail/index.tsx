@@ -1,5 +1,30 @@
+import { useEffect, useState } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 
 export function Detail() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+
+  useEffect (() => {
+    async function getCoin() {
+      try{
+        fetch(`https://assets.coincap.io/assets/${id}`)
+        .then(response => response.json())
+        .then((data) => {
+          console.log(data)
+        })
+        
+        console.log(id)
+
+      } catch(err){
+        console.log(err);
+        navigate('/')
+      }
+    }
+
+    getCoin();
+
+  }, [id])
   return (
     <div>
       <h1>Página Detalhe da moeda</h1>
