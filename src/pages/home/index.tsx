@@ -97,7 +97,7 @@ export function Home() {
           type="text"
           placeholder="Digite o nome da moeda... EX bitcoin"
           value={input}
-          onChange={(e) => setInput((e.target as HTMLInputElement).value)}
+          onChange={(e) => setInput((e.target as HTMLInputElement).value.toLowerCase())}
         />
         <button type="submit">
           <BsSearch size={30} color="#FFF" />
