@@ -21,9 +21,9 @@
   background: transparent;
 }
 
-table {
+table{
   border-collapse: separate;
-  border-spacing:  0 14px;
+  border-spacing: 0 14px;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -34,8 +34,9 @@ table caption {
   font-size: 16px;
   margin: 0.5em 0 .75em;
 }
+
 th{
-  color:#fff;
+  color: #FFF;
 }
 
 .tr{
@@ -49,7 +50,7 @@ th:first-child{
 
 td:last-child,
 th:last-child{
-  border-radius:  0 8px 8px 0;
+  border-radius: 0 8px 8px 0;
 }
 
 table th,
@@ -61,14 +62,13 @@ table td{
 .tdLabel{
   font-weight: bold;
   font-size: 18px;
-  color: #fff;
+  color: #FFF;
 }
 
 .tdProfit{
   color: #12f98a;
   font-weight: bold;
 }
-
 
 .tdLoss{
   color: #f91257;
@@ -78,7 +78,7 @@ table td{
 .buttonMore{
   background-color: #30beff;
   padding: 8px 24px;
-  color: #fff;
+  color: #FFF;
   margin: 14px 0;
   border-radius: 8px;
 }
@@ -100,33 +100,34 @@ table td{
   align-items: center;
 }
 
-/* Responsividade tabela */
-@media screen and (max-width: 600px) {
+/* RESPONSIVIDADE TABELA */
+@media screen and (max-width: 600px){
   .name img{
     margin-left: 14px;
   }
-  
-  table{
-    border:0;
 
+
+  table{
+    border: 0;
   }
 
   table thead{
     border: none;
     clip: rect(0 0 0 0);
-    height:  1px;
-    margin:  -1px;
+    height: 1px;
+    margin: -1px;
     overflow: hidden;
     position: absolute;
-    width:  1px;
+    width: 1px;
     padding: 0;
   }
 
   .tr{
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #DDD;
     display: block;
     margin-bottom: 14px;
   }
+
   table td{
     border-bottom: 1px solid rgba(221, 221, 221, 0.170);
     display: block;
@@ -154,13 +155,5 @@ table td{
   th:last-child{
     border-radius: 0;
   }
+
 }
-
-
-
-
-
-
-
-
-
